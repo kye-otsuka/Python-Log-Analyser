@@ -21,7 +21,7 @@ def generate_logs(lines):
 
             ## assign a set time
             now = datetime.now().strftime('%d/%b/%Y:%H:%M:%S +0000')
-            line = f'{ip_address} -- [{now}] "{request_Type} {path} HTTP/1.1" {status} 512\n'
+            line = f'{ip_address} - - [{now}] "{request_Type} {path} HTTP/1.1" {status} 512\n'
             f.write(line) ## write to the files
 
      
